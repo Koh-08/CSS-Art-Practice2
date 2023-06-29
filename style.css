@@ -1,0 +1,74 @@
+/* <!-- make an art using grid-template-area and grid-area --> */
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+.grid-container {
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    "areaA areaA areaB areaB areaC areaD"
+    "areaA areaA areaE areaE areaC areaF"
+    "areaA areaA areaE areaE areaG areaG"
+    "areaH areaH areaE areaE areaG areaG"
+    "areaH areaH areaI areaJ areaK areaK"
+    "areaL areaM areaI areaN areaN areaN";
+    gap: 10px;
+    border: solid 10px black;
+}   
+
+.box {
+     background-color:white;
+}
+.itemA {
+    grid-area: areaA;
+}
+.itemB {
+    grid-area: areaB;
+}
+.itemC {
+    grid-area: areaC;
+    }
+    .itemD {
+    grid-area: areaD;
+    background-color: rgb(248, 223, 0);
+    }
+    .itemE {
+    grid-area: areaE;
+    }
+    .itemF {
+    grid-area: areaF;
+    }
+    .itemG {
+    grid-area: areaG;
+    }
+    .itemH {
+    grid-area: areaH;
+    }
+    .itemI {
+    grid-area: areaI;
+    background-color: rgb(75, 75, 250);
+    }
+    .itemJ {
+        grid-area: areaJ;
+    }
+    .itemK {
+        grid-area: areaK;
+        background-color: rgb(248, 223, 0);
+    }
+    .itemL {
+        grid-area: areaL;
+    }
+    .itemM {
+        grid-area: areaM;
+        background-color: rgb(221, 11, 11);
+    }
+    .itemN {
+        grid-area: areaN;
+    }
